@@ -17,16 +17,20 @@ spec:
     registry: ghcr.io
   environments:
   - key: dev
+    owner: barucijah
+    repository: barucijah-cluster
   - key: staging
   - key: production
   ingress:
-    domain: "34.136.13.112.nip.io"
+    domain: 34.136.13.112.nip.io
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: barucijah
   repository: bucketrepo
   secretStorage: vault
   vault: {}
